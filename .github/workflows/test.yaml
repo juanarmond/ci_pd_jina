@@ -1,0 +1,27 @@
+name: Test
+on:
+  pull_request:
+    paths-ignore:
+      - ".github/**"
+    branches:
+      - main
+      - dev
+jobs:
+  tests:
+    name: Run all tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run tests
+        run: make docker_tests
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v1
+        if: always()
+        with:
+          files: report.xml
+      - name: Pytest coverage comment
+        uses: MishaKav/pytest-coverage-comment@v1.1.5
+        with:
+          pytest-coverage-path: ./pytest-coverage.txt
+          junitxml-path: ./pytest.xml
