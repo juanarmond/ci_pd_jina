@@ -1,0 +1,4 @@
+numpy
+jina[standard]
+dynaconf
+sentence-transformers

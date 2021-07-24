@@ -1,0 +1,4 @@
+pytest
+pytest-cov
+scikit-learn==0.23.0
+scikit-hubness==0.21.0
