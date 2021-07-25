@@ -4,7 +4,13 @@ on:
     paths-ignore:
       - ".github/**"
     branches:
-      - masters
+      - master
+      - dev
+  push:
+    paths-ignore:
+      - ".github/**"
+    branches:
+      - master
       - dev
 jobs:
   tests:
