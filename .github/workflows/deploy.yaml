@@ -6,7 +6,7 @@ on:
       - ".github/**"
     tags: '*'
     branches:
-      - main
+      - master
 
 jobs:
   build:
