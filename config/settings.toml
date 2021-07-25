@@ -1,0 +1,8 @@
+[default.JINA]
+server = "0.0.0.0"
+port = 12345
+protocol = "http"
+metric = "cosine"
+
+[default.MODEL]
+path = "paraphrase-MiniLM-L6-v2"
