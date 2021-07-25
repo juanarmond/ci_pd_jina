@@ -4,7 +4,7 @@
 To run tests run: `./docker_run.sh pytest`
 
 # Deployment
-## Intially:
+## Initially:
 1) Create ECR
 2) Create initial lambda function
 
@@ -20,3 +20,4 @@ To run tests run: `./docker_run.sh pytest`
  - DYNACONF_WEAVIATE__server
  - DYNACONF_WEAVIATE__port
  - DYNACONF_MODEL__path
+ - DYNACONF_MODEL__metric
