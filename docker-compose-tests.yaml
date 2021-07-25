@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  app:
+    build:
+      context: .
+      target: tests
+    environment:
+      DYNACONF_JINA__server: "jina"
+    volumes:
+      - .:/home/app
+    command: /bin/bash -c "pytest --junitxml=report.xml --cov=app tests/ | tee pytest-coverage.txt"
