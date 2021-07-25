@@ -54,8 +54,9 @@ data_sentence = np.array(
         [{"sentence": "a"}, np.array([0.1, 0.2, 0.3])],
         [{"sentence": "b"}, np.array([0.3, 0.2, 0.1])],
         [{"sentence": "c"}, np.array([0.1, 0.1, 0.1])],
-    ]
-,dtype=object)
+    ],
+    dtype=object,
+)
 
 data = np.array([[0.1, 0.2, 0.3], [0.3, 0.2, 0.1], [0.1, 0.1, 0.1]])
 query_vector = np.array([[0.1, 0.2, 0.3]])

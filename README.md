@@ -1,4 +1,4 @@
-# cipd_backend_ds
+# ci_pd_jina
 
 # Tests
 To run tests run: `./docker_run.sh pytest`

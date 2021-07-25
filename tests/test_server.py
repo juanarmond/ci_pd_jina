@@ -23,8 +23,9 @@ def test_handler():
             [{"sentence": "a"}, model.encode(["a"])[0]],
             [{"sentence": "b"}, model.encode(["a"])[0]],
             [{"sentence": "c"}, model.encode(["a"])[0]],
-        ]
-    ,dtype=object)
+        ],
+        dtype=object,
+    )
 
     f = Flow(port_expose=port, protocol=protocol, cors=True).add(uses=Indexer)
     with f:
